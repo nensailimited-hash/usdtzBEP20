@@ -1,126 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>USDT.z – Experimental BEP-20 Token</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="USDT.z is an experimental BEP-20 token on BNB Smart Chain using an upgradable proxy architecture.">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0b0b0b;
-            color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        h1, h2 {
-            color: #d4af37;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .box {
-            background: #151515;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>USDTZ BEP20 – USD Pegged Token</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9f8;
+      color: #1f2933;
+    }
+    header {
+      background: #0f3d2e;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #0f3d2e;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 6px;
+    }
+    .box {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .label {
+      font-weight: bold;
+      color: #0f3d2e;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0f3d2e;
+      color: white;
+      margin-top: 60px;
+    }
+    a {
+      color: #0f3d2e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
 
-    <h1>USDT.z</h1>
-    <p><strong>Experimental USD-Referenced Token on BNB Smart Chain</strong></p>
+<header>
+  <h1>USDTZ BEP20</h1>
+  <p>USD-Pegged Token on BNB Chain</p>
+</header>
 
-    <div class="box">
-        <h2>About the Project</h2>
-        <p>
-            USDT.z is an experimental BEP-20 token deployed on the BNB Smart Chain.
-            The project is designed for research, development, and testing purposes
-            within decentralized finance (DeFi) environments.
-        </p>
-        <p>
-            The token uses an upgradable proxy architecture (ERC1967 / UUPS),
-            allowing controlled upgrades of logic while maintaining the same
-            on-chain address.
-        </p>
-        <p>
-            USDT.z is <strong>not affiliated</strong> with Tether, USD₮, or any
-            centralized stablecoin issuer and does not represent a claim on
-            fiat currency.
-        </p>
-    </div>
+<section>
+  <h2>Overview</h2>
+  <div class="box">
+    <p>
+      <strong>USDTZ</strong> is a BEP20 token deployed on BNB Chain, designed to
+      maintain a <strong>1:1 peg with the US Dollar</strong> through on-chain liquidity mechanisms.
+    </p>
+    <p>
+      The project focuses on transparency, simplicity, and verifiable smart contracts.
+    </p>
+  </div>
+</section>
 
-    <div class="box">
-        <h2>Project Status</h2>
-        <p>
-            USDT.z is an <strong>experimental and educational project</strong>.
-            It is not actively marketed and exists primarily for architectural
-            testing, learning, and on-chain experimentation.
-        </p>
-    </div>
+<section>
+  <h2>Token Information</h2>
+  <div class="box">
+    <p><span class="label">Token Name:</span> USDTZ BEP20</p>
+    <p><span class="label">Symbol:</span> USDT.z</p>
+    <p><span class="label">Blockchain:</span> BNB Chain (BEP20)</p>
+    <p><span class="label">Decimals:</span> 18</p>
+    <p><span class="label">Contract:</span><br>
+      0x3c71DA139181B5801A9390c08a1C30c7B07D54aa
+    </p>
+  </div>
+</section>
 
-    <div class="box">
-        <h2>Use Cases</h2>
-        <ul>
-            <li>Smart contract upgradeability testing</li>
-            <li>Liquidity pool experiments</li>
-            <li>On-chain price discovery research</li>
-            <li>Educational and development purposes</li>
-        </ul>
-    </div>
+<section>
+  <h2>Peg Mechanism</h2>
+  <div class="box">
+    <p>
+      USDTZ is designed to maintain a 1:1 value with the US Dollar through on-chain
+      liquidity mechanisms.
+    </p>
+    <p>
+      The peg is supported by decentralized liquidity pools, where USDTZ can be exchanged
+      directly against USD-denominated stable assets.
+    </p>
+    <p>
+      When the market price deviates from 1 USD, arbitrage opportunities naturally
+      incentivize market participants to buy or sell USDTZ on decentralized exchanges,
+      helping restore the peg.
+    </p>
+    <p>
+      All liquidity and price data are fully transparent and verifiable on-chain.
+    </p>
+  </div>
+</section>
 
-    <div class="box">
-        <h2>Technical Information</h2>
-        <ul>
-            <li>Network: BNB Smart Chain</li>
-            <li>Token Standard: BEP-20</li>
-            <li>Architecture: Upgradable Proxy (ERC1967 / UUPS)</li>
-            <li>Contract Address (Proxy): 
-                <strong>0x3c71DA139181B5801A9390c08a1C30c7B07D54aa</strong>
-            </li>
-        </ul>
-    </div>
+<section>
+  <h2>Transparency</h2>
+  <div class="box">
+    <p>
+      All smart contracts are open-source and publicly available.
+    </p>
+    <p>
+      Liquidity is managed on-chain and visible through decentralized exchanges and
+      CoinGecko Terminal.
+    </p>
+    <p>
+      🔗 GitHub:
+      <a href="https://github.com/nensalimited-hash" target="_blank">
+        https://github.com/nensalimited-hash
+      </a>
+    </p>
+  </div>
+</section>
 
-    <div class="box">
-        <h2>Official Links</h2>
-        <ul>
-            <li>GitHub: 
-                <a href="https://github.com/nensalimited-hash" target="_blank">
-                    https://github.com/nensalimited-hash
-                </a>
-            </li>
-        </ul>
-    </div>
+<section>
+  <h2>Community & Links</h2>
+  <div class="box">
+    <p>
+      📘 Facebook<br>
+      ▶ YouTube<br>
+      💼 LinkedIn
+    </p>
+    <p>
+      Official website hosted on GitHub Pages.
+    </p>
+  </div>
+</section>
 
-    <div class="box">
-        <h2>Disclaimer</h2>
-        <p>
-            This project is provided for experimental and educational purposes only.
-            No guarantees are made regarding price stability, value, or future development.
-            Users interact with this token entirely at their own risk.
-        </p>
-    </div>
+<footer>
+  © 2026 USDTZ BEP20 – All rights reserved
+</footer>
 
-    <div class="footer">
-        © 2026 USDT.z — Experimental Project
-    </div>
-
-</div>
 </body>
 </html>
