@@ -1,164 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>USDTZ BEP20 – USD Pegged Token</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f9f8;
-      color: #1f2933;
-    }
-    header {
-      background: #0f3d2e;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #0f3d2e;
-      border-bottom: 2px solid #d4af37;
-      padding-bottom: 6px;
-    }
-    .box {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .label {
-      font-weight: bold;
-      color: #0f3d2e;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #0f3d2e;
-      color: white;
-      margin-top: 60px;
-    }
-    a {
-      color: #0f3d2e;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>USDTZBEP20 Dashboard</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 1000px; margin: 2em auto; padding: 1em; background: #f8f8f8; }
+  h1 { color: #0f9d58; text-align:center; } /* verde per titoli */
+  .section { background: #f0f0f0; padding: 1em; border-radius: 8px; margin-bottom: 2em; }
+  input, button { padding: 0.5em; margin-right: 0.5em; }
+  button { cursor: pointer; background:#0f9d58; color:#fff; border:none; border-radius:5px; }
+  canvas { background: #fff; border: 1px solid #ccc; border-radius: 8px; margin-top: 1em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.3em; }
+  header { text-align: center; margin-bottom: 2em; }
+  header img { width:100px; border-radius:50%; border:2px solid gold; }
+  .pool { font-size: 0.9em; color:#555; } /* pool discreta */
+</style>
 </head>
 <body>
 
 <header>
-  <h1>USDTZ BEP20</h1>
-  <p>USD-Pegged Token on BNB Chain</p>
+  <img src="images/logo.png" alt="USDT.z Logo">
+  <h1>USDTZBEP20 (USDT.z)</h1>
 </header>
 
-<section>
-  <h2>Overview</h2>
-  <div class="box">
-    <p>
-      <strong>USDTZ</strong> is a BEP20 token deployed on BNB Chain, designed to
-      maintain a <strong>1:1 peg with the US Dollar</strong> through on-chain liquidity mechanisms.
-    </p>
-    <p>
-      The project focuses on transparency, simplicity, and verifiable smart contracts.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Token Information</h2>
-  <div class="box">
-    <p><span class="label">Token Name:</span> USDTZ BEP20</p>
-    <p><span class="label">Symbol:</span> USDT.z</p>
-    <p><span class="label">Blockchain:</span> BNB Chain (BEP20)</p>
-    <p><span class="label">Decimals:</span> 18</p>
-    <p><span class="label">Contract:</span><br>
-      0x3c71DA139181B5801A9390c08a1C30c7B07D54aa
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Peg Mechanism</h2>
-  <div class="box">
-    <p>
-      USDTZ is designed to maintain a 1:1 value with the US Dollar through on-chain
-      liquidity mechanisms.
-    </p>
-    <p>
-      The peg is supported by decentralized liquidity pools, where USDTZ can be exchanged
-      directly against USD-denominated stable assets.
-    </p>
-    <p>
-      When the market price deviates from 1 USD, arbitrage opportunities naturally
-      incentivize market participants to buy or sell USDTZ on decentralized exchanges,
-      helping restore the peg.
-    </p>
-    <p>
-      All liquidity and price data are fully transparent and verifiable on-chain.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Transparency</h2>
-  <div class="box">
-    <p>
-      All smart contracts are open-source and publicly available.
-    </p>
-    <p>
-      Liquidity is managed on-chain and visible through decentralized exchanges and
-      CoinGecko Terminal.
-    </p>
-    <p>
-      🔗 GitHub:
-      <a href="https://github.com/nensalimited-hash" target="_blank">
-        https://github.com/nensalimited-hash
-      </a>
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Community & Links</h2>
-  <div class="box">
-    <p>
-      📘 Facebook:
-      <a href="https://www.facebook.com/USDTZBEP20" target="_blank">
-        facebook.com/USDTZBEP20
-      </a>
-    </p>
-    <p>
-      ▶ YouTube:
-      <a href="https://www.youtube.com/@USDTZBEP20USDT.z" target="_blank">
-        youtube.com/@USDTZBEP20
-      </a>
-    </p>
-    <p>
-      💼 LinkedIn:
-      <a href="https://www.linkedin.com/company/usdtz-bep20" target="_blank">
-        linkedin.com/company/usdtz-bep20
-      </a>
-    </p>
-  </div>
-</section>
-
-<footer>
-  © 2026 USDTZ BEP20 – All rights reserved
-</footer>
-
+<div class="section" id="token-info">
+  <h2>Informazioni Token</h2>
+  <p>Wallet connesso: <span id="wallet">nessuno</span></p>
+  <p>Balance: <span id="balance">loading...</span></p>
+  <p>Supply totale: <span id="supply">100,000,000</span></p>
+  <p class="pool">Pool attiva: sì (piccola, discreta)</
