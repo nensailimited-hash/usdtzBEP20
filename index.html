@@ -1,145 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>USDT.z – Experimental BEP-20 Token</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="USDT.z is an experimental BEP-20 token on BNB Smart Chain using an upgradable proxy architecture.">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0b0b0b;
-            color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        h1, h2 {
-            color: #d4af37;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .box {
-            background: #151515;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        .logo {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USDToken Finance (USDT.z)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 22px;
+      border-radius: 30px;
+      background: #00c897;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .buttons a:hover {
+      background: #00e6ad;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 14px;
+      margin-top: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      background: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #bdbdbd;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 110px;
+        height: 110px;
+      }
+
+      iframe {
+        height: 500px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
 
-    <!-- Logo preso direttamente dal link GitHub -->
-    <img src="https://nensailimited-hash.github.io/usdtzBEP20/Logo%20200x200.png" alt="USDT.z Logo" class="logo">
+  <!-- HEADER -->
+  <header>
+    <img src="Logo2 for Linkedin.png" alt="USDToken Finance Logo" />
+    <h1>USDToken Finance (USDT.z)</h1>
+    <p>Decentralized stable-asset ecosystem on BNB Smart Chain</p>
+  </header>
 
-    <h1>USDT.z</h1>
-    <p><strong>Experimental USD-Referenced Token on BNB Smart Chain</strong></p>
+  <div class="container">
 
+    <!-- ABOUT -->
     <div class="box">
-        <h2>About the Project</h2>
-        <p>
-            USDT.z is an experimental BEP-20 token deployed on the BNB Smart Chain.
-            The project is designed for research, development, and testing purposes
-            within decentralized finance (DeFi) environments.
-        </p>
-        <p>
-            The token uses an upgradable proxy architecture (ERC1967 / UUPS),
-            allowing controlled upgrades of logic while maintaining the same
-            on-chain address.
-        </p>
-        <p>
-            USDT.z is <strong>not affiliated</strong> with Tether, USD₮, or any
-            centralized stablecoin issuer and does not represent a claim on
-            fiat currency.
-        </p>
+      <h2>About the Project</h2>
+      <p>
+        USDToken Finance (USDT.z) is a decentralized digital asset designed to
+        provide transparency, liquidity visibility, and real-time market data.
+        The project focuses on simplicity, verifiability, and open market access
+        through decentralized infrastructure.
+      </p>
     </div>
 
+    <!-- MARKET / LIVE CHART -->
     <div class="box">
-        <h2>Project Status</h2>
-        <p>
-            USDT.z is an <strong>experimental and educational project</strong>.
-            It is not actively marketed and exists primarily for architectural
-            testing, learning, and on-chain experimentation.
-        </p>
+      <h2 style="text-align:center;">Live Market Data</h2>
+      <p style="text-align:center;">
+        Real-time pool data and charts powered by CoinGecko Terminal
+      </p>
+
+      <iframe
+        src="https://www.geckoterminal.com/bsc/pools/0x14a1845643da1e91c719ed808de2f70348510f63">
+      </iframe>
     </div>
 
+    <!-- WALLET / LINKS -->
     <div class="box">
-        <h2>Use Cases</h2>
-        <ul>
-            <li>Smart contract upgradeability testing</li>
-            <li>Liquidity pool experiments</li>
-            <li>On-chain price discovery research</li>
-            <li>Educational and development purposes</li>
-        </ul>
+      <h2>Wallet & Tools</h2>
+      <p>
+        You can interact with the USDT.z token using any BNB Smart Chain compatible
+        wallet. Market data and liquidity are publicly verifiable.
+      </p>
+
+      <div class="buttons">
+        <a href="https://metamask.io/" target="_blank">MetaMask</a>
+        <a href="https://trustwallet.com/" target="_blank">Trust Wallet</a>
+        <a href="https://www.geckoterminal.com/" target="_blank">CoinGecko Terminal</a>
+      </div>
     </div>
 
+    <!-- TRANSPARENCY -->
     <div class="box">
-        <h2>Technical Information</h2>
-        <ul>
-            <li>Network: BNB Smart Chain</li>
-            <li>Token Standard: BEP-20</li>
-            <li>Architecture: Upgradable Proxy (ERC1967 / UUPS)</li>
-            <li>Contract Address (Proxy): 
-                <strong>0x3c71DA139181B5801A9390c08a1C30c7B07D54aa</strong>
-            </li>
-        </ul>
+      <h2>Transparency</h2>
+      <p>
+        All market data, liquidity pools, and price movements are visible in
+        real time through decentralized analytics platforms. No hidden mechanics,
+        no opaque systems.
+      </p>
     </div>
 
-    <div class="box">
-        <h2>Official Links</h2>
-        <ul>
-            <li>GitHub: 
-                <a href="https://github.com/nensalimited-hash" target="_blank">
-                    https://github.com/nensalimited-hash
-                </a>
-            </li>
-            <li>Facebook: 
-                <a href="https://www.facebook.com/USDTZBEP20" target="_blank">
-                    USDT.z Facebook
-                </a>
-            </li>
-            <li>LinkedIn: 
-                <a href="https://www.linkedin.com/company/usdtz-bep20" target="_blank">
-                    USDT.z LinkedIn
-                </a>
-            </li>
-        </ul>
-    </div>
+  </div>
 
-    <div class="box">
-        <h2>Disclaimer</h2>
-        <p>
-            This project is provided for experimental and educational purposes only.
-            No guarantees are made regarding price stability, value, or future development.
-            Users interact with this token entirely at their own risk.
-        </p>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 USDToken Finance – All data provided via decentralized platforms
+  </footer>
 
-    <div class="footer">
-        © 2026 USDT.z — Experimental Project
-    </div>
-
-</div>
 </body>
 </html>
