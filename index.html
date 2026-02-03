@@ -1,176 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USDToken Finance (USDT.z)</title>
+    <meta charset="UTF-8">
+    <title>USDT.z – Institutional Monitoring Dashboard</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="USDT.z is an experimental BEP-20 token on BNB Smart Chain. Institutional-style monitoring dashboard with public market analytics.">
 
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #2b2b2b;
+        }
 
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 16px;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 2.2rem;
-    }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-    h2 {
-      margin-top: 0;
-    }
+        header img {
+            max-width: 140px;
+            margin-bottom: 20px;
+        }
 
-    p {
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
+        h2 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
 
-    .box {
-      background: rgba(255,255,255,0.08);
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-    }
+        .subtitle {
+            margin-top: 10px;
+            color: #5f6b6d;
+            font-size: 16px;
+        }
 
-    .buttons {
-      text-align: center;
-      margin-top: 25px;
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
 
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 22px;
-      border-radius: 30px;
-      background: #00c897;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.2s, background 0.2s;
-    }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+        }
 
-    .buttons a:hover {
-      background: #00e6ad;
-      transform: scale(1.05);
-    }
+        iframe {
+            width: 100%;
+            height: 320px;
+            border: none;
+            border-radius: 8px;
+        }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 14px;
-      margin-top: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-      background: #000;
-    }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      color: #bdbdbd;
-    }
+        .info-list li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
 
-    @media (max-width: 768px) {
-      header img {
-        width: 110px;
-        height: 110px;
-      }
+        .info-list strong {
+            color: #0f8f5f;
+        }
 
-      iframe {
-        height: 500px;
-      }
-    }
-  </style>
+        .links a {
+            color: #0f8f5f;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #7a7a7a;
+        }
+    </style>
 </head>
 
 <body>
+<div class="container">
 
-  <!-- HEADER -->
-  <header>
-    <img src="Logo2 per linkedin.png" alt="USDToken Finance Logo" />
-    <h1>USDToken Finance (USDT.z)</h1>
-    <p>Decentralized stable-asset ecosystem on BNB Smart Chain</p>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <img src="logo2 per linkedin.png" alt="USDT.z Logo">
+        <h1>USDT.z</h1>
+        <div class="subtitle">
+            Experimental BEP-20 Token · BNB Smart Chain<br>
+            Institutional Monitoring Dashboard
+        </div>
+    </header>
 
-  <div class="container">
+    <!-- ROW 1: GLOBAL MARKET OVERVIEW -->
+    <div class="grid">
 
-    <!-- ABOUT -->
-    <div class="box">
-      <h2>About the Project</h2>
-      <p>
-        USDToken Finance (USDT.z) is a decentralized digital asset designed to
-        provide transparency, liquidity visibility, and real-time market data.
-        The project focuses on simplicity, verifiability, and open market access
-        through decentralized infrastructure.
-      </p>
+        <div class="card">
+            <h2>Global Market Snapshot</h2>
+            <iframe
+                src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_1&symbols=BINANCE:BTCUSDT,BINANCE:ETHUSDT,BINANCE:BNBUSDT&interval=D&theme=light">
+            </iframe>
+        </div>
+
+        <div class="card">
+            <h2>Market Context</h2>
+            <p>
+                This section provides a general overview of major digital assets
+                for contextual market comparison.
+            </p>
+            <ul class="info-list">
+                <li>• Bitcoin (BTC)</li>
+                <li>• Ethereum (ETH)</li>
+                <li>• BNB (BNB Chain)</li>
+            </ul>
+        </div>
+
     </div>
 
-    <!-- MARKET / LIVE CHART -->
-    <div class="box">
-      <h2 style="text-align:center;">Live Market Data</h2>
-      <p style="text-align:center;">
-        Real-time pool data and charts powered by CoinGecko Terminal
-      </p>
+    <!-- ROW 2: USDT.Z ANALYTICS -->
+    <div class="grid">
 
-      <iframe
-        src="https://www.geckoterminal.com/bsc/pools/0x14a1845643da1e91c719ed808de2f70348510f63">
-      </iframe>
+        <div class="card">
+            <h2>USDT.z – On-Chain Analytics</h2>
+            <iframe
+                src="https://www.geckoterminal.com/bsc/pools/0x14a1845643da1e91c719ed808de2f70348510f63">
+            </iframe>
+        </div>
+
+        <div class="card">
+            <h2>Technical Information</h2>
+            <ul class="info-list">
+                <li><strong>Network:</strong> BNB Smart Chain</li>
+                <li><strong>Standard:</strong> BEP-20</li>
+                <li><strong>Initial Supply:</strong> 100,000,000</li>
+                <li><strong>Contract (Proxy):</strong><br>
+                    0x3c71DA139181B5801A9390c08a1C30c7B07D54aa
+                </li>
+            </ul>
+
+            <div class="links" style="margin-top:15px;">
+                <a href="https://bscscan.com/token/0x3c71DA139181B5801A9390c08a1C30c7B07D54aa" target="_blank">
+                    View on BscScan
+                </a>
+            </div>
+        </div>
+
     </div>
 
-    <!-- WALLET / LINKS -->
-    <div class="box">
-      <h2>Wallet & Tools</h2>
-      <p>
-        You can interact with the USDT.z token using any BNB Smart Chain compatible
-        wallet. Market data and liquidity are publicly verifiable.
-      </p>
+    <!-- FOOTER -->
+    <footer>
+        © 2026 USDT.z — Experimental & Educational Project<br>
+        This website provides public, read-only market information.
+    </footer>
 
-      <div class="buttons">
-        <a href="https://metamask.io/" target="_blank">MetaMask</a>
-        <a href="https://trustwallet.com/" target="_blank">Trust Wallet</a>
-        <a href="https://www.geckoterminal.com/" target="_blank">CoinGecko Terminal</a>
-      </div>
-    </div>
-
-    <!-- TRANSPARENCY -->
-    <div class="box">
-      <h2>Transparency</h2>
-      <p>
-        All market data, liquidity pools, and price movements are visible in
-        real time through decentralized analytics platforms. No hidden mechanics,
-        no opaque systems.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 USDToken Finance – All data provided via decentralized platforms
-  </footer>
-
+</div>
 </body>
 </html>
