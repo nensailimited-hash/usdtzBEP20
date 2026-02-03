@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>USDT.z – Institutional Monitoring Dashboard</title>
+    <title>USDT.z – Institutional Digital Asset Overview</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="USDT.z is an experimental BEP-20 token on BNB Smart Chain. Institutional-style monitoring dashboard with public market analytics.">
+    <meta name="description" content="USDT.z is an experimental BEP-20 digital asset on BNB Smart Chain designed to study price stability mechanisms in decentralized environments.">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #2b2b2b;
+            background: #f2f4f6;
+            color: #2a2a2a;
         }
 
         .container {
@@ -23,17 +23,17 @@
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         header img {
-            max-width: 140px;
-            margin-bottom: 20px;
+            max-width: 180px;
+            margin-bottom: 25px;
         }
 
         h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 34px;
             font-weight: 600;
         }
 
@@ -41,53 +41,65 @@
             margin-top: 0;
             font-size: 22px;
             font-weight: 600;
+            color: #0f8f5f;
         }
 
         .subtitle {
-            margin-top: 10px;
+            margin-top: 12px;
             color: #5f6b6d;
             font-size: 16px;
+            line-height: 1.5;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
         }
 
         .card {
             background: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #444;
         }
 
         iframe {
             width: 100%;
             height: 320px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
-        .info-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        ul {
+            padding-left: 18px;
         }
 
-        .info-list li {
-            margin-bottom: 10px;
+        li {
+            margin-bottom: 8px;
             font-size: 15px;
         }
 
-        .info-list strong {
-            color: #0f8f5f;
+        .highlight {
+            background: #f7faf9;
+            border-left: 4px solid #0f8f5f;
+            padding: 15px 18px;
+            border-radius: 6px;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
         .links a {
             color: #0f8f5f;
             text-decoration: none;
+            font-size: 15px;
         }
 
         .links a:hover {
@@ -95,10 +107,11 @@
         }
 
         footer {
-            margin-top: 60px;
+            margin-top: 70px;
             text-align: center;
             font-size: 14px;
             color: #7a7a7a;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -108,44 +121,81 @@
 
     <!-- HEADER -->
     <header>
-        <img src="Logo2 per linkedin.png" alt="USDT.z Logo">
+        <img src="Nuovo Logo 2000x2000.png" alt="USDT.z Logo">
         <h1>USDT.z</h1>
         <div class="subtitle">
-            Experimental BEP-20 Token · BNB Smart Chain<br>
-            Institutional Monitoring Dashboard
+            Experimental Digital Asset · BNB Smart Chain<br>
+            Institutional-Style Market Monitoring
         </div>
     </header>
 
-    <!-- ROW 1: GLOBAL MARKET OVERVIEW -->
+    <!-- ROW 1: PROJECT OVERVIEW -->
     <div class="grid">
 
         <div class="card">
-            <h2>Global Market Snapshot</h2>
-            <iframe
-                src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_1&symbols=BINANCE:BTCUSDT,BINANCE:ETHUSDT,BINANCE:BNBUSDT&interval=D&theme=light">
-            </iframe>
+            <h2>Project Overview</h2>
+            <p>
+                USDT.z is an experimental BEP-20 digital asset developed to explore
+                decentralized mechanisms aimed at maintaining price reference
+                to the United States Dollar (USD) within open blockchain environments.
+            </p>
+
+            <div class="highlight">
+                USDT.z is <strong>not a traditional stablecoin</strong> and does not
+                represent a claim on fiat currency. The project focuses on
+                researching and observing market-driven stabilization dynamics.
+            </div>
         </div>
 
         <div class="card">
-            <h2>Market Context</h2>
+            <h2>Stability Approach</h2>
             <p>
-                This section provides a general overview of major digital assets
-                for contextual market comparison.
+                The design philosophy of USDT.z is centered on attempting to
+                maintain a value reference close to <strong>1 USD</strong>,
+                through liquidity dynamics and decentralized price discovery.
             </p>
-            <ul class="info-list">
-                <li>• Bitcoin (BTC)</li>
-                <li>• Ethereum (ETH)</li>
-                <li>• BNB (BNB Chain)</li>
+            <ul>
+                <li>No centralized issuer</li>
+                <li>No fiat-backed reserves</li>
+                <li>Market-driven valuation</li>
+                <li>Transparent on-chain data</li>
             </ul>
         </div>
 
     </div>
 
-    <!-- ROW 2: USDT.Z ANALYTICS -->
+    <!-- ROW 2: MARKET CONTEXT -->
     <div class="grid">
 
         <div class="card">
-            <h2>USDT.z – On-Chain Analytics</h2>
+            <h2>Global Digital Asset Context</h2>
+            <iframe
+                src="https://www.tradingview.com/widgetembed/?symbols=BINANCE:BTCUSDT,BINANCE:ETHUSDT,BINANCE:BNBUSDT&interval=D&theme=light">
+            </iframe>
+        </div>
+
+        <div class="card">
+            <h2>Positioning</h2>
+            <p>
+                USDT.z is intentionally positioned as an
+                <strong>experimental financial instrument</strong>,
+                clearly distinct from centralized stablecoin issuers such as
+                Tether (USDT) or USD₮.
+            </p>
+
+            <div class="highlight">
+                The project is independent and unaffiliated with
+                any centralized stablecoin provider or financial institution.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ROW 3: TOKEN ANALYTICS -->
+    <div class="grid">
+
+        <div class="card">
+            <h2>USDT.z – Market Analytics</h2>
             <iframe
                 src="https://www.geckoterminal.com/bsc/pools/0x14a1845643da1e91c719ed808de2f70348510f63">
             </iframe>
@@ -153,9 +203,9 @@
 
         <div class="card">
             <h2>Technical Information</h2>
-            <ul class="info-list">
+            <ul>
                 <li><strong>Network:</strong> BNB Smart Chain</li>
-                <li><strong>Standard:</strong> BEP-20</li>
+                <li><strong>Token Standard:</strong> BEP-20</li>
                 <li><strong>Initial Supply:</strong> 100,000,000</li>
                 <li><strong>Contract (Proxy):</strong><br>
                     0x3c71DA139181B5801A9390c08a1C30c7B07D54aa
@@ -174,7 +224,8 @@
     <!-- FOOTER -->
     <footer>
         © 2026 USDT.z — Experimental & Educational Project<br>
-        This website provides public, read-only market information.
+        This website provides read-only informational content and does not
+        constitute financial advice or a stablecoin issuance.
     </footer>
 
 </div>
