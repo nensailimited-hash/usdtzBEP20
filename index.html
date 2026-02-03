@@ -42,6 +42,17 @@
             font-size: 22px;
             font-weight: 600;
             color: #0f8f5f;
+            position: relative;
+            padding-bottom: 6px;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #d4af37; /* linea oro sotto il titolo */
+            margin-top: 4px;
         }
 
         .subtitle {
@@ -59,10 +70,17 @@
         }
 
         .card {
-            background: #ffffff;
-            border-radius: 12px;
+            background: linear-gradient(180deg, #ffffff, #f9fbfc);
+            border: 1px solid #d4af37; /* bordo dorato elegante */
+            border-radius: 14px; /* angoli morbidi */
             padding: 25px;
             box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
         }
 
         .card p {
@@ -74,8 +92,8 @@
         iframe {
             width: 100%;
             height: 320px;
-            border: none;
-            border-radius: 10px;
+            border: 2px solid #0f8f5f; /* bordo verde elegante per analytics */
+            border-radius: 12px;
         }
 
         ul {
@@ -91,7 +109,7 @@
             background: #f7faf9;
             border-left: 4px solid #0f8f5f;
             padding: 15px 18px;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 15px;
             line-height: 1.6;
         }
@@ -121,7 +139,7 @@
 
     <!-- HEADER -->
     <header>
-        <img src="Logo 200x200.png" alt="USDT.z Logo">
+        <img src="Logo3perlinkedin.png" alt="USDT.z Logo">
         <h1>USDT.z</h1>
         <div class="subtitle">
             Experimental Digital Asset · BNB Smart Chain<br>
